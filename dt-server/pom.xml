@@ -45,7 +45,7 @@
 		<dependency>
 			<groupId>org.jsoup</groupId>
 			<artifactId>jsoup</artifactId>
-			<version>1.11.2</version>
+			<version>1.11.2</version    >
 		</dependency>
 
         <!--API의 응답으로 오는 JSON 의 내용을 검증-->

@@ -1,8 +1,14 @@
 
 function loadData() {
 
-  var invoiceNumber = $('#invoice-number').val()
-  if (invoiceNumber.length == 13) {
+  var invoiceNumber = $('#invoice-number').val();
+
+  // 문자열 변수에 숫자이외의 문자포함 여부를 확인하는 정규식
+  if(invoiceNumber.match(/[^0-9]/)){
+    alert("송장번호로 숫자만 입력하세요");
+    return(false);
+  }
+  else if (invoiceNumber.length == 13) {
     var deliveryTrackingUrl = "http://localhost:8080/delivery-tracking";
 
     var $deliveryTrackingTable = $('#delivery-tracking');
@@ -24,7 +30,7 @@ function loadData() {
       success: function(response){
 
         // =================
-        // 예외 처리 필요, response는 잘 받아왔지만 원하는 결과가 없는 경우는 서버단에서 하지
+        // 예외 처리 필요?, response는 잘 받아왔지만 원하는 결과가 없는 경우는 서버단에서 하지
         // =================
         console.log(response);
         clearTimeout(deliveryRequestTimeout);
@@ -88,6 +94,8 @@ function loadData() {
 
         // Contents 를 DOM에 반영
         $deliveryTrackingTable.append(deliveryTrackingContents);
+
+
       },
       error: function(err){
         console.log(err);
