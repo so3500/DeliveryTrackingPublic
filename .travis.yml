@@ -1,2 +1,2 @@
 language: java
-script: "cd dt-server && mvnw test"
+script: "cd dt-server && ./mvnw test"
