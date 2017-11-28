@@ -1,2 +1,5 @@
 language: java
 script: "cd dt-server && ./mvnw test"
+branches:
+  only:
+    - master
