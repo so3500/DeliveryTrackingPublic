@@ -45,9 +45,9 @@ public class DeliveryControllerTest {
         int numberIndex = 0;
 
         // 송장번호 example 
-        StringBuilder invoiceNumber = new StringBuilder("xxxxxxxxxxxxx");           // 13자리 송장 번호
-        StringBuilder invoiceNumberLonger = new StringBuilder("xxxxxxxxxxxxxxxxxx");  // 13자리 이상 송장 번호
-        StringBuilder invoiceNumberShorter = new StringBuilder("xxxx");        // 13자리 이하 송장 번호
+        StringBuilder invoiceNumber = new StringBuilder("6863225220200");           // 13자리 송장 번호
+        StringBuilder invoiceNumberLonger = new StringBuilder("6863225220200000");  // 13자리 이상 송장 번호
+        StringBuilder invoiceNumberShorter = new StringBuilder("68220200");        // 13자리 이하 송장 번호
         int invoiceNumberLen = invoiceNumber.length();
         int invoiceNumberLongerLen = invoiceNumberLonger.length();
         int invoiceNumberShorterLen = invoiceNumberShorter.length();
