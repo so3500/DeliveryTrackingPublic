@@ -1,4 +1,4 @@
-# DeliveryTracking
+# DeliveryTracking [![Build Status](https://travis-ci.org/so3500/DeliveryTrackingPublic.svg?branch=master)](https://travis-ci.org/so3500/DeliveryTrackingPublic)
 
 ### Develop environment & prerequisites
 
