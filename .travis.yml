@@ -1,1 +1,2 @@
 language: java
+script: "cd dt-server && mvn test"
